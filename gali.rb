@@ -5,20 +5,20 @@
 class Gali < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.0/gali_Darwin_x86_64.tar.gz"
-      sha256 "c5dfcc15df2023187e15661089c98b23f82ca3c7c7cb413e2f304127090eeaf8"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Darwin_x86_64.tar.gz"
+      sha256 "894ca9225ea4297a3bcd3bc85f41d0abb20b57ba9f49cd7311c2f1d074a04b3d"
 
       def install
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.0/gali_Darwin_arm64.tar.gz"
-      sha256 "49eb35f9f635e237ccc67f544332097a5fa90072090cffedf672ed4e91b8eb01"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Darwin_arm64.tar.gz"
+      sha256 "29e106dfadb19dbe389c5455d0da84d945891377a9f1ae979b7df6465f34cf5d"
 
       def install
         bin.install "gali"
@@ -28,15 +28,15 @@ class Gali < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.0/gali_Linux_x86_64.tar.gz"
-      sha256 "6863efc4664fe0440e032e7776c876c6ce9507976fb43b7937b85ab507521e0b"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Linux_x86_64.tar.gz"
+      sha256 "6de0ad998b4759604058b4cf10bc0dd3cecf7a40b595248ad478c4d817df8583"
       def install
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.0/gali_Linux_arm64.tar.gz"
-      sha256 "b72d34d0c77a724fbca479c72b8db6034c0412ce2cbad6192339cff42b322594"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Linux_arm64.tar.gz"
+      sha256 "ffb566d16185aa6eec437b5bfc7905713132cc41fd2ffb9771b79241848ca296"
       def install
         bin.install "gali"
       end
