@@ -5,40 +5,40 @@
 class GoGitUseCommitTimes < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.1.0/go-git-use-commit-times_Darwin_x86_64.tar.gz"
-      sha256 "4e8d0d831090410c21fb63000f9128a20ec462692f9eb2d2563e976ea8f57b50"
+      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.2.0/go-git-use-commit-times_Darwin_x86_64.tar.gz"
+      sha256 "a0af650530c5369f372369cfcdedc5b7983caf482bd33ef2246ece7ce2cfa439"
 
       def install
-        bin.install "go-git-use-commit-times"
+        bin.install "git-use-commit-times"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.1.0/go-git-use-commit-times_Darwin_arm64.tar.gz"
-      sha256 "ded74c248b34ee68a975040a6bf1c340ed3ae23ba9e4c2d5c5f7deb2ad162901"
+      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.2.0/go-git-use-commit-times_Darwin_arm64.tar.gz"
+      sha256 "1f5467c884b6413edc08d95359842c0bc1f49179cd1588aabb90b2b7c4cce826"
 
       def install
-        bin.install "go-git-use-commit-times"
+        bin.install "git-use-commit-times"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.1.0/go-git-use-commit-times_Linux_x86_64.tar.gz"
-      sha256 "ddf3f3b458b11ea7d9ca2973bf8d1b262c12329c9674c69de07c6de2253a3197"
+      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.2.0/go-git-use-commit-times_Linux_x86_64.tar.gz"
+      sha256 "65f6188f634f67506e247c8c61438cae7b4992c70a2fd34f8ab6f126aff643c1"
       def install
-        bin.install "go-git-use-commit-times"
+        bin.install "git-use-commit-times"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.1.0/go-git-use-commit-times_Linux_arm64.tar.gz"
-      sha256 "a51b85da1f17aff2025070eb5ba77b94b57e9a3f6d99ac34be650904ada3f8fb"
+      url "https://github.com/srz-zumix/go-git-use-commit-times/releases/download/v0.2.0/go-git-use-commit-times_Linux_arm64.tar.gz"
+      sha256 "de43e878f6358b639409979f42ae44f31e97fa3f4eac2d87c2391bbe368a1445"
       def install
-        bin.install "go-git-use-commit-times"
+        bin.install "git-use-commit-times"
       end
     end
   end
