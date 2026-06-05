@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "jirafs" do
-  version "0.4.0"
-  sha256 "fedbaf0699e6c97dcf838447fa9f6b9bb52e03282ef57fc2c0e0f5d732f107e8"
+  version "0.5.0"
+  sha256 "05096f93455e8557366977410172e0037958a42b5a7f25432b272a72deb5bafb"
 
   url "https://github.com/srz-zumix/jirafs/releases/download/v#{version}/jirafs-v#{version}.dmg"
   name "jirafs"
