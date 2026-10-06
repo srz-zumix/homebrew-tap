@@ -5,22 +5,22 @@
 class Gali < Formula
   desc ""
   homepage ""
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Darwin_x86_64.tar.gz"
-      sha256 "894ca9225ea4297a3bcd3bc85f41d0abb20b57ba9f49cd7311c2f1d074a04b3d"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Darwin_x86_64.tar.gz"
+      sha256 "8e42c7e955da5cd8704ebf89fd4d2161b688cab0b10fb08ba93cea1f1c2443cc"
 
-      def install
+      define_method(:install) do
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Darwin_arm64.tar.gz"
-      sha256 "29e106dfadb19dbe389c5455d0da84d945891377a9f1ae979b7df6465f34cf5d"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Darwin_arm64.tar.gz"
+      sha256 "c07b3974bec370058b89327b37d921b70d785b094bc009b903566e5a59aa8e9b"
 
-      def install
+      define_method(:install) do
         bin.install "gali"
       end
     end
@@ -28,16 +28,16 @@ class Gali < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Linux_x86_64.tar.gz"
-      sha256 "6de0ad998b4759604058b4cf10bc0dd3cecf7a40b595248ad478c4d817df8583"
-      def install
+      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Linux_x86_64.tar.gz"
+      sha256 "938a608d269d12187c7e927b254aba7f114cbe91e73182096bc0057e7f369f11"
+      define_method(:install) do
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.1.1/gali_Linux_arm64.tar.gz"
-      sha256 "ffb566d16185aa6eec437b5bfc7905713132cc41fd2ffb9771b79241848ca296"
-      def install
+      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Linux_arm64.tar.gz"
+      sha256 "7c29363d8bfd845e664c6c2265b92eefa12ca6a9875662c9edd110d3650d0dc6"
+      define_method(:install) do
         bin.install "gali"
       end
     end
