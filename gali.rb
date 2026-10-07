@@ -5,20 +5,20 @@
 class Gali < Formula
   desc ""
   homepage ""
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Darwin_x86_64.tar.gz"
-      sha256 "8e42c7e955da5cd8704ebf89fd4d2161b688cab0b10fb08ba93cea1f1c2443cc"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.3.0/gali_Darwin_x86_64.tar.gz"
+      sha256 "f849bab9c1fa37f1763b2ddd00447ac6527d8d91d40259daf1fd11dd64e4958c"
 
       define_method(:install) do
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Darwin_arm64.tar.gz"
-      sha256 "c07b3974bec370058b89327b37d921b70d785b094bc009b903566e5a59aa8e9b"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.3.0/gali_Darwin_arm64.tar.gz"
+      sha256 "feb7063918663e3ac28ac3879ca67c65a7bf00961164ee32430afab3ce8f0db4"
 
       define_method(:install) do
         bin.install "gali"
@@ -28,15 +28,15 @@ class Gali < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Linux_x86_64.tar.gz"
-      sha256 "938a608d269d12187c7e927b254aba7f114cbe91e73182096bc0057e7f369f11"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.3.0/gali_Linux_x86_64.tar.gz"
+      sha256 "072a37f3ff3288fd1a375159f8b500041aabb9dd17af6aa6efdb661fac125ad4"
       define_method(:install) do
         bin.install "gali"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/srz-zumix/gali/releases/download/v0.2.0/gali_Linux_arm64.tar.gz"
-      sha256 "7c29363d8bfd845e664c6c2265b92eefa12ca6a9875662c9edd110d3650d0dc6"
+      url "https://github.com/srz-zumix/gali/releases/download/v0.3.0/gali_Linux_arm64.tar.gz"
+      sha256 "06dcf94ef6e19a508cfe7b4dca77c5c59707d24ce44ecd6bd68b259a68e8a9ee"
       define_method(:install) do
         bin.install "gali"
       end
